@@ -20,20 +20,19 @@ A lightweight client for interfacing with the SentinelStore API in Roblox exploi
 ## Example Usage
 
 ```lua
-local Store = loadstring(game:HttpGet("https://yourdomain.com/sentinelstore.lua"))()
+local SentinelStore = loadstring(request({Url = "https://github.com/AstwareDev/SentinelStore/raw/refs/heads/main/SentinelStore_Library.lua", Method = 'GET'}).Body)()
+SentinelStore.SetAccessKey("My@SecretKey")
 
-Store.SetAccessKey("My@SecretKey")
-
-Store.Send({
+SentinelStore.Send({
     name = "Player1",
     level = 42,
     location = "DesertZone"
 })
 
-local latest = Store.Latest()
+local latest = SentinelStore.Latest()
 print(latest)
 
-local all = Store.All()
+local all = SentinelStore.All()
 for i, entry in ipairs(all) do
     print(entry)
 end
