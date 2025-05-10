@@ -7,12 +7,10 @@ Library.API = "https://astware-sentinelapi.vercel.app/"
 
 function Library.SetAccessKey(target)
     if typeof(target) ~= "string" then
-        error("AccessKey must be a string")
         Notification_Library.createNotification("Error", "AccessKey must be a string", 5)
         return false
     end
     if target == "" or target == nil then
-        error("AccessKey can't be nil")
         Notification_Library.createNotification("Error", "AccessKey can't be nil", 5)
         return false
     end
