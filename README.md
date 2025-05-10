@@ -19,6 +19,12 @@ A lightweight client for interfacing with the SentinelStore API in Roblox exploi
 * `POST /all` — Get all data
 * All endpoints require an `accessKey` in the body
 
+## Installation
+```lua
+local SentinelStore = loadstring(request({Url = "https://github.com/AstwareDev/SentinelStore/raw/refs/heads/main/SentinelStore_Library.lua", Method = 'GET'}).Body)()
+SentinelStore.SetAccessKey("My@SecretKey")
+```
+
 ## Example Usage
 
 ```lua
