@@ -2,6 +2,8 @@
 
 A lightweight client for interfacing with the SentinelStore API in Roblox exploits. Designed for real-time data exchange between multiple clients using access keys.
 
+[Preview](https://github.com/AstwareDev/SentinelStore/blob/main/image%20(5).png?raw=true)
+
 ## Features
 
 * Send data (only strings and numbers)
