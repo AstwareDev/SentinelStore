@@ -37,7 +37,7 @@ SentinelStore.SetAccessKey("My@SecretKey")
 The callback will run whenever new data is detected. This works like `.OnServerEvent` and polls every second for new changes.
 
 ```lua
-SentinelStore.OnDataReceived(function(data)
+SentinelStore.OnDataReceived:Connect(function(data)
     print("New data received!")
     print(data)
 end)
