@@ -21,14 +21,14 @@ A lightweight client for interfacing with the SentinelStore API in Roblox exploi
 
 ## Installation
 ```lua
-local SentinelStore = loadstring(request({Url = "https://github.com/AstwareDev/SentinelStore/raw/refs/heads/main/SentinelStore_Library.lua", Method = 'GET'}).Body)()
+local SentinelStore = loadstring(request({Url = "https://raw.githubusercontent.com/AstwareDev/SentinelStore/refs/heads/main/SentinelStore.lua", Method = 'GET'}).Body)()
 SentinelStore.SetAccessKey("My@SecretKey")
 ```
 
 ## Example Usage
 
 ```lua
-local SentinelStore = loadstring(request({Url = "https://github.com/AstwareDev/SentinelStore/raw/refs/heads/main/SentinelStore_Library.lua", Method = 'GET'}).Body)()
+local SentinelStore = loadstring(request({Url = "https://raw.githubusercontent.com/AstwareDev/SentinelStore/refs/heads/main/SentinelStore.lua", Method = 'GET'}).Body)()
 SentinelStore.SetAccessKey("My@SecretKey")
 
 SentinelStore.Send({
